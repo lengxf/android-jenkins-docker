@@ -29,7 +29,8 @@ RUN unzip /opt/$GRADLE_ZIP -d /opt/ && \
 
 # Install Android SDK
 ADD $ANDROID_SDK_ZIP_URL /opt/
-RUN tar xzvf /opt/$ANDROID_SDK_ZIP -C /opt/ && \
+RUN  mkdir /opt/android-sdk-linux && \
+   unzip /opt/$ANDROID_SDK_ZIP -d /opt/android-sdk-linu/ && \
 	rm /opt/$ANDROID_SDK_ZIP
 
 # Install required build-tools
