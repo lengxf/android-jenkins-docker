@@ -4,8 +4,8 @@ FROM jenkins
 # Set desired Android Linux SDK version
 ENV ANDROID_SDK_VERSION 25
 
-ENV ANDROID_SDK_ZIP android-sdk_r$ANDROID_SDK_VERSION-linux.tgz
-ENV ANDROID_SDK_ZIP_URL https://dl.google.com/android/$ANDROID_SDK_ZIP
+ENV ANDROID_SDK_ZIP sdk-tools-linux-3859397.zip
+ENV ANDROID_SDK_ZIP_URL https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 ENV ANDROID_HOME /opt/android-sdk-linux
 
 ENV GRADLE_ZIP gradle-3.3-bin.zip
